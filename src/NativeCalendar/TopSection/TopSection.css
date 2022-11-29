@@ -1,0 +1,116 @@
+.top_section_cont {
+    height: 50px;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.top_section_month_name_and_year {
+    width: 35%;
+    max-width: 300px;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.top_section_arrow_box {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.top_section_buttons {
+    min-width: 101px;
+    height: 31px;
+    background: #D9DAF3;
+    border-radius: 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2D224C;
+    padding: 0 10px;
+    margin-right: 23px;
+    cursor: pointer;
+    position: relative;
+}
+
+.top_section_buttons > span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2D224C;
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top_section_buttons > ul {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    overflow-y: auto;
+    opacity: 1;
+    z-index: 9999;
+    box-shadow: 0 3px 35px 0 rgb(29 63 96 / 6%);
+}
+
+.top_section_buttons > ul li {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top_section_buttons > ul li:not(:first-child) {
+    padding-left: 18px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    color: var(--dark);
+}
+
+.top_section_buttons input {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 6px;
+    border: solid 1px grey;
+    background-color: white;
+    padding-left: 18px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    color: rgb(34, 49, 63, 0.7);
+}

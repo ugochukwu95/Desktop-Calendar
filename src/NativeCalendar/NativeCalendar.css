@@ -1,0 +1,112 @@
+.native_calendar_cont {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1240px;
+    border: none;
+    transition: all .4s ease;
+    border-spacing: 3px;
+    border-collapse: inherit;
+}
+
+.native_calendar_cont th {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.native_calendar_cont td, .native_calendar_cont th {
+    width: 13%;
+    max-width: 163px;
+}
+
+.native_calendar_date_event_cont {
+    width: 95%;
+    height: 130px;
+    margin: 30px auto 0;
+    overflow-y: auto;
+}
+
+.native_calendar_date_event {
+    width: 100%;
+    min-height: 40px;
+    background: #D9DAF3;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    padding: 4px 4px 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.native_calendar_date_event.greyed_out {
+    background: #B4B4B4;
+}
+
+.native_calendar_date_event > div:first-child {
+    width: 7px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.native_calendar_date_event > div:first-child > span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #D4145A;
+    margin-top: 5px;
+}
+
+.native_calendar_date_event > div:nth-child(2) > span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #2D224C;
+    display: block;
+}
+
+.native_calendar_date_event.greyed_out > div:nth-child(2) > span {
+    text-decoration: line-through;
+}
+
+.native_calendar_cont td {
+    height: 170px;
+    background-color: white;
+    padding: 0;
+    position: relative;
+    transition: all .4s ease;
+    border-radius: 5px;
+}
+
+.native_calendar_date {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2D224C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.native_calendar_date.active {
+    width: 24px;
+    height: 24px;
+    background: #D4145A;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.native_calendar_date.greyed_out {
+    color: #CCCCCC;
+}
